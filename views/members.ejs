@@ -1,0 +1,23 @@
+<% include partials\header  %>
+<h2>Registered members</h2>
+<% members.forEach(function(members){  %>
+<style>
+        .members {
+                margin-left: 20px;
+                padding-bottom: 20px;
+                color: rgb(88, 88, 218);
+                width: 40%;
+        }
+
+        h6 {
+                margin: 0px;
+        }
+</style>
+
+<div class="members">
+        <h6> Name :: <%=members.name %> </h6>
+        <h6>country :: <%=members.country %> </h6>
+        <h6>Joined :: <%=members.created.toDateString() %></h6>
+</div>
+<hr>
+<% }); %>

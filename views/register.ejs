@@ -1,0 +1,90 @@
+<% include partials\header %>
+
+
+<style type="text/css">
+  @import url('https://fonts.googleapis.com/css?family=Gochi+Hand&display=swap');
+  @import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
+
+  body {
+    font-family: 'Gochi Hand', cursive;
+  }
+
+  .container {
+    border: 1px solid rgb(147, 148, 243);
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  .form-group {
+    display: flex;
+  }
+
+  #fav {
+    background: #ddd;
+    padding: 10px;
+    padding-top: 10px;
+    border-radius: 5px 0px 0px 5px;
+  }
+
+  .form-control {
+    border-radius: 0px 5px 5px 0px;
+  }
+
+  #eye {
+    background: #ddd;
+    padding: 10px;
+    padding-top: 10px;
+    border-radius: 0px 5px 5px 0px;
+  }
+
+  p {
+    text-align: center;
+  }
+</style>
+</head>
+
+<body>
+  <div class="container text-center col-sm-10 col-md-8 col-lg-4">
+    <h1>Register</h1>
+    <form action="/members" method="POST">
+      <div class="form-group">
+        <i id="fav" class="fa fa-user-plus"></i><input class="form-control" type="text" name="name"
+          placeholder="enter your name" required>
+      </div>
+      <div class="form-group">
+        <i id="fav" class="fa fa-at"></i><input class="form-control" type="email" name="email"
+          placeholder="enter your email" required>
+      </div>
+      <div class="form-group">
+        <i id="fav" class="fa fa-flag"></i><input class="form-control" type="text" name="country"
+          placeholder="enter your country" required>
+      </div>
+      <div class="form-group">
+        <i id="fav" class="fa fa-phone"></i><input class="form-control" type="number" name="phone"
+          placeholder="enter phone number" required>
+      </div>
+      <div class="form-group">
+        <i id="fav" class="fa fa-lock"></i><input style="border-radius: 0;" class="form-control" type="password"
+          name="password" placeholder="password must be at least 6 characters" required><i id="eye" class="fa fa-eye"></i>
+      </div>
+      <button type="submit" class="btn btn-primary btn-block mb-3">Register</button>
+      <p>Already a member? <a href="/login">Login</a></p>
+    </form>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+  <% include partials\footer  %>

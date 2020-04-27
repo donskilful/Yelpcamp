@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Gochi+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
+.wrapper{
+    outline: none;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50% );
+    background: rgba(0, 0, 0, 0.6);
+    max-width: 550px;
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+.wrapper, input{
+    width: 85%;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.searchbtn{
+    background: #ffec00;
+    width: 10%;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+}
+
+.searchbtn .fas{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+body{
+    font-family:  'Gochi Hand', cursive;
+}
+img {
+    width: 250px;
+    height: 150px;
+}
+
+img.landing-img {
+    width: 100%;
+}
+.land{
+    background-image: url('/images/background.jpg' );
+    border-radius: 5px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.overlay {
+    color: white;
+    text-align: center;
+    padding-top: 18%;
+    padding-bottom: 18%;
+    background-color: rgba(7, 5, 129, 0.6);
+    height: 100vh;
+}
+h3, p{
+    text-align: center;
+    padding-top: 10px;
+}
+a{
+    border-radius: 5px;
+}
+.one{
+    width: 100%;
+    height: 250px;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+.btn btn-primary btn-lg{
+text-align: center;
+}
+.row{
+    text-align: center;
+}
+.col-md-6{
+    display: inline-block;
+}

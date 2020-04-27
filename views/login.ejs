@@ -1,0 +1,75 @@
+<% include partials\header %>
+
+<style type="text/css">
+	@import url('https://fonts.googleapis.com/css?family=Gochi+Hand&display=swap');
+	@import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
+
+	.container {
+		border: 1px solid rgb(147, 148, 243);
+		border-radius: 5px;
+		margin-top: 20px;
+	}
+
+	body {
+		font-family: 'Gochi Hand', cursive;
+	}
+
+	h1 {
+		text-align: center;
+	}
+
+	.form-group {
+		display: flex;
+	}
+
+	#user {
+		background: #ddd;
+		padding: 10px;
+		padding-top: 10px;
+		border-radius: 5px 0px 0px 5px;
+	}
+
+	#lock {
+		background: #ddd;
+		padding: 10px;
+		padding-top: 10px;
+		border-radius: 5px 0px 0px 5px;
+	}
+
+	#eye {
+		background: #ddd;
+		padding: 10px;
+		padding-top: 10px;
+		border-radius: 0px 5px 5px 0px;
+	}
+
+	.form-control {
+		border-radius: 0px 5px 5px 0px;
+	}
+
+	p {
+		text-align: center;
+	}
+</style>
+</head>
+
+<body>
+	<div class="container text-center col-sm-10 col-md-8 col-lg-4">
+		<h1>Login</h1>
+		<form action="/" method="POST">
+			<div class="form-group">
+				<i id="user" class="fa fa-user"></i>
+				<input class="form-control" type="email" name="email" placeholder="enter email">
+			</div>
+			<div class="form-group">
+				<i id="lock" class="fa fa-lock"></i><input class="form-control" style="border-radius: 0;"
+					type="password" name="password" placeholder="enter password"><i id="eye" class="fa fa-eye"></i>
+			</div>
+		</form>
+		<button id="btn" type="submit" class="btn btn-primary btn-block mb-3">Login</button>
+		<p>No account? <a href="/register">Register</a></p>
+	</div>
+
+
+
+	<% include partials\footer  %>
