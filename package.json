@@ -10,7 +10,7 @@
   "author": "skilful",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.19.0",
+    "body-parser": "^1.20.6",
     "ejs": "^2.7.4",
     "express": "^4.22.2",
     "express-sanitizer": "^1.0.5",
